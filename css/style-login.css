@@ -1,0 +1,204 @@
+:root{
+    --basis-violet: #A782E4;
+    --basis-blue: #38E5DE;
+    --secondary-blue: #54EDCB;
+    --basis-green: #7AF4B3;
+    --secondary-green: #A3F89A;
+    --third-green: #CDFA82;
+    --c2a: #F9F871;
+    --mywhite: #EFEDDD;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: linear-gradient(to top, #72e18f, #00d7b0, #00c9cb, #00b9db, #00a6dc, #3e9ddf, #6293dd, #8088d5, #9684db, #ae7edc, #c877d9, #e16dd2);
+    font-family: 'Nunito Sans', sans-serif;
+}
+header{
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-container{
+    display: flex;
+    height: 60px;
+    width: 180px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container img{
+    height: 40px;
+}
+.header__menu{
+    display: flex;
+    height: 60px;
+    width: 130px;
+    margin: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.header__menu--profile{
+    display: flex;
+    margin: 3px;
+    padding: 3px;
+    width: 90px;
+    align-items: center;
+}
+.header__menu--profile img{
+    height: 40px;
+}
+.header__menu--profile p{
+    font-size: 1.5rem;
+    margin: 5px;
+    color: var(--mywhite);
+}
+.header__menu--items{
+    display: none;
+    position: absolute;
+    margin: 85px 10px 0 0;
+    text-align: end;
+}
+.header__menu:hover .header__menu--items{
+    display: block;
+}
+.header__menu--items ul{
+    list-style: none;
+}
+.header__menu--items li a{
+    padding: 2px;
+    font-size: 1.4rem;
+    color: var(--mywhite);
+    text-decoration: none;
+}
+main{
+    display: grid;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    grid-template: repeat(5, 1fr) / repeat(1, 1fr);
+    text-align: center;
+    align-items: center;
+    padding: 20px 25px;
+}
+main h2{
+    font-size: 1.8rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: var(--mywhite);
+}
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 10px;
+}
+.login__container--form input{
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: var(--mywhite) 1px solid;
+    font-size: 1.6rem;
+    transition: 300ms all;
+}
+.login__container--form input::placeholder{
+    color: var(--mywhite);
+}
+.login__container--form button{
+    margin: 3px;
+    padding: 5px;
+    background-color: var(--basis-violet);
+    border-style: none;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    color: var(--mywhite);
+}
+.login__container--form button:focus{
+    outline: none;
+}
+.login__container--form button:hover{
+    box-shadow: 0 1px 2px 0 rgba(48, 45, 44, 0.6);
+    cursor: pointer;
+}
+.login-options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1rem;
+    color: var(--mywhite);
+}
+#login-button{
+    margin: 0;
+    margin-right: 4px;
+}
+.login-options .login-remember{
+    display: flex;
+    align-items: center;
+}
+.login-options a{
+    color: var(--mywhite);
+    text-decoration: none;
+    padding: 5px;
+    transition: 300ms all;
+}
+.login-options a:hover{
+    box-shadow: 0 1px 2px 0 rgba(48, 45, 44, 0.6);
+}
+.login__container--social-media{
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    flex-direction: column;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.login__container--google, .login__container--twitter{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--mywhite);
+}
+.login__container--google p, .login__container--twitter p{
+    margin-left: 5px;
+    transition: 300ms all;
+    padding: 5px;
+    border-radius: 5px;
+}
+.login__container--google p:hover, .login__container--twitter p:hover{
+    box-shadow: 0 1px 2px 0 rgba(48, 45, 44, 0.6);
+    cursor: pointer;
+}
+.login__container--register{
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--mywhite);
+    transition: 300ms all;
+    padding: 7px;
+    border-radius: 5px;
+}
+.login__container--register:hover{
+    box-shadow: 0 1px 2px 0 rgba(48, 45, 44, 0.6);
+    cursor: pointer;
+}
