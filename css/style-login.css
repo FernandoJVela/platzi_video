@@ -103,6 +103,13 @@ main h2{
     grid-row: 2 / 3;
     padding: 10px;
 }
+.login__container--form-form{
+    display: flex;
+    flex-direction: column;
+}
+.login__container--form-form input:focus{
+    outline: none;
+}
 .login__container--form input{
     margin: 5px;
     margin-bottom: 20px;
@@ -112,6 +119,7 @@ main h2{
     border-bottom: var(--mywhite) 1px solid;
     font-size: 1.6rem;
     transition: 300ms all;
+    color: var(--mywhite);
 }
 .login__container--form input::placeholder{
     color: var(--mywhite);
