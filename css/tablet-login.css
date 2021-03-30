@@ -1,0 +1,61 @@
+.logo-container{
+    display: flex;
+    height: 60px;
+    width: 280px;
+    margin: 40px;
+}
+.logo-container img{
+    height: 60px;
+}
+.header__menu--profile p{
+    font-size: 1.8rem;
+    margin: 10px;
+}
+.header__menu{
+    width: 230px;
+    margin: 30px;
+    margin-right: 100px;
+}
+.header__menu--profile{
+    margin: 8px;
+    width: 90px;
+}
+.header__menu--profile img{
+    height: 60px;
+}
+.header__menu--items{
+    margin: 105px -20px 0 0;
+}
+.header__menu--items li a{
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+main{
+    padding: 20px 30px;
+}
+main h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.login__container--form input{
+    font-size: 1.8rem;
+}
+.login__container--form button{
+    padding: 10px;
+    font-size: 1.8rem;
+}
+.login-options{
+    font-size: 1.5rem;
+}
+.login__container--google, .login__container--twitter{
+    font-size: 1.6rem;
+}
+.login__container--register{
+    font-size: 1.6rem;
+}
+footer{
+    font-size: 1.5rem;
+}
+footer a:hover{
+    transform: scale(1.5, 1.5);
+}
