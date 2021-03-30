@@ -1,0 +1,43 @@
+.logo-container{
+    height: 60px;
+    width: 280px;
+    margin: 40px;
+}
+.logo-container img{
+    height: 60px;
+}
+.header__menu--profile p{
+    font-size: 1.8rem;
+    margin: 10px;
+}
+.header__menu{
+    width: 230px;
+    margin: 30px;
+    margin-right: 100px;
+}
+.header__menu--profile{
+    margin: 8px;
+    width: 90px;
+}
+.header__menu--profile img{
+    height: 60px;
+}
+.header__menu--items{
+    margin: 105px -20px 0 0;
+}
+.header__menu--items li a{
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+footer{
+    flex-direction: row;
+    font-size: 1.6rem;
+    justify-content: center;
+}
+footer:hover > a{
+    margin: 0 20px;
+}
+footer a:hover{
+    padding: 5px;
+    transform: scale(1.3, 1.3);
+}

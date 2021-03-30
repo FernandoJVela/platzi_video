@@ -53,6 +53,7 @@ header{
     padding: 3px;
     width: 90px;
     align-items: center;
+    transition: 450ms all;
 }
 .header__menu--profile img{
     height: 40px;
